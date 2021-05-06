@@ -63,6 +63,12 @@ function draw() {
       cnv.mouseClicked(youWinMouseClicked);
       break;
 
+    case 'draw':
+      drawingMachine();
+      cnv.mouseClicked(drawingMachineClicked);
+      break;
+
+
     default:
       break;
   }
@@ -205,6 +211,14 @@ function youWin() {
 }
 
 function youWinMouseClicked() {
-  state = 'title';
+  state = 'draw';
+}
+
+function drawMachineMouseClicked(){
+  state = 'title'
   points = 0;
+}
+
+function drawingMachine(){
+  
 }
